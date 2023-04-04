@@ -23,3 +23,11 @@ class Player(Turtle):
 
     def next_level(self):
         self.start_player()
+
+    def is_player_crossed(self):
+        if self.ycor() > 280:
+            return True
+        else:
+            return False
+
+
